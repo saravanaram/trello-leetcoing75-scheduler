@@ -29,6 +29,9 @@ logging.basicConfig(
 
 def make_request(url, method, params=None, data=None, timeout=None, files=None):
     """Send a request and handle exceptions and logging."""
+    logging.info(params)
+    logging.info(data)
+    logging.info(files)
     try:
         with requests.request(
             method, url, params=params, data=data, timeout=timeout, files=files
