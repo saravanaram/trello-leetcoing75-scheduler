@@ -194,7 +194,9 @@ def set_board_background(config, settings, board_id):
     if not member_id:
         logging.error("Failed to retrieve member ID")
         return
-
+    logging.info(
+            f"image url: {config['RAW_URL_BASE']}"
+        
     image_filepath = download_image(
         f"{config['RAW_URL_BASE']}imgs/background/groot.png"
     )
