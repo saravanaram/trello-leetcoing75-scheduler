@@ -61,7 +61,7 @@ def trello_request(
     query.update(kwargs)  # Always add the kwargs to the query parameters
     if files Not None:
         query.add({"file": {files})
-    logging.info("Making a request to endpoint: %s with method: %s", method, url)
+    logging.info("Making a request to endpoint: %s with method: %s, query:%s", method, url, query)
     return make_request(url, method, params=query, timeout=timeout, files=files)
 
 
