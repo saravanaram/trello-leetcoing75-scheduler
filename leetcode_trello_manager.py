@@ -198,7 +198,7 @@ def set_board_background(config, settings, board_id):
             f"image url: {config['RAW_URL_BASE']}"
         
     image_filepath = download_image(
-        f"{config['RAW_URL_BASE']}imgs/background/groot.png"
+        f"{config['RAW_URL_BASE']}/imgs/background/groot.png"
     )
 
     if not image_filepath:
