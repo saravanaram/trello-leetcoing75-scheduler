@@ -54,7 +54,7 @@ TRELLO_ENTITY = {"BOARD": "boards", "MEMBER": "members", "LIST": "lists"}
 
 def fetch_image():
     """Fetches the background image from a given URL."""
-    return download_image(f"{_config['RAW_URL_BASE']}imgs/background/groot.png")
+    return download_image(f"{_config['RAW_URL_BASE']}/imgs/background/groot.png")
 
 
 def set_board_background_image(board_id):
