@@ -84,7 +84,7 @@ def trello_request(
 
     logging.info(f"Constructed URL: {url}")
     return make_request(
-        url, method, params=query, data=None, timeout=timeout, files=files
+        url, method, params=query, data=None, timeout=timeout, file=files
     )
 
 
