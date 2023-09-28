@@ -59,7 +59,8 @@ def trello_request(
 
     query = {"key": _config["API_KEY"], "token": _config["OAUTH_TOKEN"]}
     query.update(kwargs)  # Always add the kwargs to the query parameters
-
+    if files Not None:
+        query.add({"file": {files})
     logging.info("Making a request to endpoint: %s with method: %s", method, url)
     return make_request(url, method, params=query, timeout=timeout, files=files)
 
