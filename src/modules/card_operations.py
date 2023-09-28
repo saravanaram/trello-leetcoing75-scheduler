@@ -198,7 +198,7 @@ def process_completed_cards(_config, _settings, board_id, current_date):
 
 def attach_image_to_card(_config, _settings, card_id, topic):
     """Attach an image to a given card."""
-    image_url = f"{_config['RAW_URL_BASE']}imgs/cards/{topic}.png"
+    image_url = f"{_config['RAW_URL_BASE']}/imgs/cards/{topic}.png"
     response = trello_request(
         _config,
         _settings,
